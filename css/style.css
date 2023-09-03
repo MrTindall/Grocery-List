@@ -1,0 +1,157 @@
+:root {
+    --cust-color-main: #6a4ea7;
+    --cust-color-accent:  #2aaed6;  
+    --cust-color-text: #7A7978;
+    --cust-color-text-reverse: #FFFFFF;
+    --cust-color-link: #ff7b00;
+    --cust-color-background: #F2EDEB;
+    --cust-h1-color: #6138b8;
+    --cust-low-color:#97c7ee;
+    --cust-low-color-hover:#688aa7;
+    --cust-high-color:#d4736b;
+    --cust-high-color-hover:#415769;
+
+    /* widths */
+    --cust-max-width: 900px;
+
+    /* typefaces */
+    --cust-typeface: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    max-width: var(--cust-max-width);
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--cust-color-background);
+}
+h1, h2 {
+    margin: 30px 0 0px 0;
+    color: var(--cust-h1-color);
+}
+h3 {
+    margin: 30px 0 5px 0;
+    color: rgb(57, 24, 123);
+}
+
+.content-flex {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.content-flex > .half-width {
+    flex: 1;
+}
+
+.lists {
+    margin: 20px 0;
+}
+
+.lists-header {
+    margin: 0 0 10px 0;
+    color: var(--cust-color-main);
+}
+
+.list {
+    padding: 20px 50px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.list h3, .list p {
+    margin: 5px 0;
+}
+
+.list:first-of-type {
+    border-top: 1px solid black;
+}
+
+
+label, input[type="text"], input[type="number"] {
+    display: block;
+}
+
+label {
+    color: var(--cust-color-main);
+    font-size: small;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="number"] {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: large;
+    color: black;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+}
+select{
+    width: 100%;
+    font-size: large;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input[type="button"],input[type="submit"]
+{
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--cust-color-link);
+    color: var(--cust-color-text-reverse);
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+
+}
+input[type="button"]:active,input[type="submit"]:active
+{
+    background-color: #cf6502;
+}
+
+#groceryListForm {
+    margin-top: 12px;
+    padding: 20px;
+    background-color: var(--cust-color-main);
+    border-radius: 4px;
+}
+
+#groceryListForm  label {
+    color: var(--cust-color-text-reverse);
+    max-height: max-content;
+    font-size: 20px;
+}
+.high {
+    background-color: var(--cust-low-color-hover);
+}
+.high:hover {
+    background-color: var(--cust-high-color-hover);
+}
+
+.low {
+    background-color: var(--cust-low-color);
+}
+.low:hover {
+    background-color: var(--cust-low-color-hover);
+}
+.higher {
+    background-color: var(--cust-low-color-hover);
+}
+
+.del {
+    text-decoration: line-through;
+}

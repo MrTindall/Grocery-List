@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tindall Mod 5 Assignment</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="content-flex">
+                <div class="half-width">
+                    <h1>Grocery List</h1>
+                    <form id="groceryListForm" >
+                        <label for="groceryList">Item:</label>
+                        <input name="list" id="groceryList" type="text" required>
+
+                        <label for="quantityItem">Quantity:</label>
+                        <input type="number" id="quantityItem" required>
+
+                        <label for="foodCategory">Category:</label>
+                        <select name="foodCategory" id="foodCategory">
+                            <option value="Produce">Produce</option>
+                            <option value="Dairy">Dairy</option>
+                            <option value="Baking">Baking</option>
+                            <option value="Grains">Grains</option>
+                            <option value="Meat">Meat</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <input name="submit" type="submit" value="Add Item">
+                    </form>
+                </div>
+                <div class="half-width">
+                    <h2 class="List-header">List:</h2>
+                    <div class="lists">
+
+                    </div>
+                    <input id="crossOutItem" class="center hidden" name="crossOut" type="button" value="Cross Out Item">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
